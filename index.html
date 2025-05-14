@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <style>
       body {
-        padding-top: 120px; /* Adjust based on navbar height */
+        padding-top: 120px;
       }
     </style>
   </head>
@@ -20,7 +20,7 @@
       class="navbar navbar-expand-sm bg-dark navbar-dark d-flex fixed-top align-items-center justify-content-between p-2 px-3"
     >
       <div class="bg-light rounded px-4">
-        <h4 class="text-center">Rayhan's Portfolio</h1>
+        <h4 class="text-center">Rayhan's Portfolio</h4>
       </div>
       <div class="btn-group">
         <button type="button" class="btn btn-light">Home</button>
@@ -30,7 +30,10 @@
     </nav>
   </header>
   <body>
-    <div class="container p-2 my-2 border rounded-4 px-4">
+    <div
+      class="container p-2 my-2 border rounded-4 px-4"
+      style="background-color: ghostwhite"
+    >
       <div class="row">
         <div class="col-md-8">
           <h1 class="text-start display-1">About Me</h1>
@@ -49,6 +52,58 @@
           <img src="tree.jpg" class="rounded-4 w-100 border" alt="Tree" />
         </div>
       </div>
+    </div>
+    <div
+      class="container mt-5 border rounded-4"
+      style="background-color: aliceblue"
+    >
+      <div class="row">
+        <div
+          class="col-md-5 my-3 mx-4 rounded-5 border"
+          style="background-color: ghostwhite"
+        >
+          <h2 class="text-start ms-4 mt-4">Resources I'm Using</h2>
+          <div class="list-group ms-4 mt-4 me-4">
+            <a
+              href="https://www.w3schools.com/"
+              class="list-group-item list-group-item-action"
+              target="_blank"
+            >
+              <div class="d-flex w-100 justify-content-between">
+                <img
+                  src="W3Schools_logo.png"
+                  style="width: 40px"
+                  alt="W3_logo"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div
+          class="col-md-6 my-3 mx-4 rounded-5 border ms-auto"
+          style="background-color: ghostwhite"
+        >
+          <h2 class="text-start ms-4 mt-4">How I work</h2>
+          <p class="text-start ms-4 mt-4 me-5 pe-4 fs-6">
+            I have had a little bit of experience developing websites before. I
+            want to further hone my skills as a Software Engineer and develop a
+            professional website (such as this portfolio!) by taking a UI design
+            course at the University of Ottawa. <br />
+            <br />
+            To achieve my goals I will apply following design principles:
+            <br />
+          </p>
+          <p class="text-start ms-4 mt-4 fs-6">
+            <b> Scale, Visual Hierarchy, Balance, Contrast </b>
+          </p>
+          <p class="text-start ms-4 mt-4 fs-6">
+            I also hope to learn the Gestalt Laws later this term.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5 p-1 bg-dark text-white text-center">
+      <p>Footer</p>
     </div>
   </body>
 </html>

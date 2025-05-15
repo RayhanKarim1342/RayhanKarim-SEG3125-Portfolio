@@ -22,194 +22,221 @@
         --bs-popover-body-padding-x: 1rem;
         --bs-popover-body-padding-y: 0.5rem;
       }
+      #aboutMe {
+        scroll-margin-top: 90px;
+      }
+      #howIWork {
+        scroll-margin-top: 90px;
+      }
+      #caseStudies {
+        scroll-margin-top: 90px;
+      }
+      .nav-link {
+        color: #f8f9fa;
+      }
+      .nav-link.active {
+        color: #212529 !important;
+      }
     </style>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
     <header>
       <nav
         class="navbar navbar-expand-sm bg-dark navbar-dark d-flex fixed-top align-items-center justify-content-between p-2 px-3"
+        id="navbar"
       >
-        <div class="bg-light rounded px-4">
-          <h4 class="text-center">Rayhan's Portfolio</h4>
-        </div>
-        <div class="btn-group">
-          <button type="button" class="btn btn-light">Home</button>
-          <button type="button" class="btn btn-light">Thing 1</button>
-          <button type="button" class="btn btn-light">Thing 2</button>
-        </div>
+        <h4 class="text-center text-light fw-bold">Rayhan's Portfolio</h4>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutMe">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#howIWork">How I Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#caseStudies"> Case Studies </a>
+          </li>
+        </ul>
       </nav>
     </header>
-    <div
-      class="container p-2 my-2 border rounded-4 px-4"
-      style="background-color: ghostwhite"
-    >
-      <div class="row">
-        <div class="col-md-8">
-          <h1 class="text-start display-1">About Me</h1>
-          <p class="text-start my-4 me-5 fs-4">
-            Hello! My name is Rayhan Karim. I am a second year Software
-            Engineering student at uOttawa. My topics of interest are computers,
-            coding and mathematics. During my free time I like to play video
-            games, hang out with friends, and watch TV shows. I hope to deepen
-            my understanding of UI/UX and further develop my web development
-            skills taking this course SEG-3125. I also like taking pictures on
-            my phone. You can observe a picture of a random tree I took on the
-            right.
-          </p>
-        </div>
-        <div class="col-md-4">
-          <img
-            src="images/tree.jpg"
-            class="rounded-4 w-100 border"
-            alt="Tree"
-          />
-        </div>
-      </div>
-    </div>
-    <div
-      class="container mt-5 border rounded-4"
-      style="background-color: aliceblue"
-    >
-      <div class="row">
-        <div
-          class="col-md-5 my-3 mx-4 rounded-5 border"
-          style="background-color: ghostwhite"
-        >
-          <h2 class="text-start ms-4 mt-4">Resources I'm Using</h2>
-          <div class="list-group ms-4 mt-4 me-4">
-            <a
-              href="https://www.w3schools.com/"
-              class="list-group-item list-group-item-action"
-              target="_blank"
-            >
-              <div class="d-flex w-100 justify-content-between">
-                <img
-                  src="images/W3Schools_logo.png"
-                  style="width: 40px"
-                  alt="W3_logo"
-                />
-                <p class="text-right font-monospace">W3Schools</p>
-              </div>
-            </a>
-            <a
-              href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
-              class="list-group-item list-group-item-action"
-              target="_blank"
-            >
-              <div class="d-flex w-100 justify-content-between">
-                <img
-                  src="images/Bootstrap_logo.png"
-                  style="width: 50px"
-                  alt="Bootstrap_logo"
-                />
-                <p class="text-right font-monospace">Bootstrap Documentation</p>
-              </div>
-            </a>
-            <a
-              href="https://www.nngroup.com/"
-              class="list-group-item list-group-item-action"
-              target="_blank"
-            >
-              <div class="d-flex w-100 justify-content-between">
-                <img
-                  src="images/NNg_logo.png"
-                  style="width: 80px"
-                  class="p-1"
-                  alt="NNg_logo"
-                />
-                <p class="text-right font-monospace">Nielson Norman Group</p>
-              </div>
-            </a>
+    <div data-spy="scroll" data-target="#navbar" data-offset="0">
+      <div
+        class="container p-2 my-2 border rounded-4 px-4"
+        style="background-color: ghostwhite"
+        id="aboutMe"
+      >
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="text-start display-1">About Me</h1>
+            <p class="text-start my-4 me-5 fs-4">
+              Hello! My name is Rayhan Karim. I am a second year Software
+              Engineering student at uOttawa. My topics of interest are
+              computers, coding and mathematics. During my free time I like to
+              play video games, hang out with friends, and watch TV shows. I
+              hope to deepen my understanding of UI/UX and further develop my
+              web development skills taking this course SEG-3125. I also like
+              taking pictures on my phone. You can observe a picture of a random
+              tree I took on the right.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img
+              src="images/tree.jpg"
+              class="rounded-4 w-100 border"
+              alt="Tree"
+            />
           </div>
         </div>
-        <div
-          class="col-md-6 my-3 mx-4 rounded-5 border ms-auto"
-          style="background-color: ghostwhite"
-        >
-          <h2 class="text-start ms-4 mt-4">How I work</h2>
-          <p class="text-start ms-4 mt-4 me-5 pe-4 fs-6">
-            I have had a little bit of experience developing websites before. I
-            want to further hone my skills as a Software Engineer and develop a
-            professional website (such as this portfolio!) by taking a UI design
-            course at the University of Ottawa. <br />
-            <br />
-            To achieve my goals I will apply following design principles:
-            <br />
-          </p>
-          <p class="text-start ms-4 mt-4 fs-6">
-            <b> Scale, Visual Hierarchy, Balance, Contrast </b>
-          </p>
-          <p class="text-start ms-4 mt-4 fs-6">
-            I also hope to learn the Gestalt Laws later this term.
-          </p>
+      </div>
+      <div
+        class="container mt-5 border rounded-4"
+        style="background-color: aliceblue"
+      >
+        <div class="row">
+          <div
+            class="col-md-5 my-3 mx-4 rounded-5 border"
+            style="background-color: ghostwhite"
+          >
+            <h2 class="text-start ms-4 mt-4">Resources I'm Using</h2>
+            <div class="list-group ms-4 mt-4 me-4">
+              <a
+                href="https://www.w3schools.com/"
+                class="list-group-item list-group-item-action"
+                target="_blank"
+              >
+                <div class="d-flex w-100 justify-content-between">
+                  <img
+                    src="images/W3Schools_logo.png"
+                    style="width: 40px"
+                    alt="W3_logo"
+                  />
+                  <p class="text-right font-monospace">W3Schools</p>
+                </div>
+              </a>
+              <a
+                href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
+                class="list-group-item list-group-item-action"
+                target="_blank"
+              >
+                <div class="d-flex w-100 justify-content-between">
+                  <img
+                    src="images/Bootstrap_logo.png"
+                    style="width: 50px"
+                    alt="Bootstrap_logo"
+                  />
+                  <p class="text-right font-monospace">
+                    Bootstrap Documentation
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://www.nngroup.com/"
+                class="list-group-item list-group-item-action"
+                target="_blank"
+              >
+                <div class="d-flex w-100 justify-content-between">
+                  <img
+                    src="images/NNg_logo.png"
+                    style="width: 80px"
+                    class="p-1"
+                    alt="NNg_logo"
+                  />
+                  <p class="text-right font-monospace">Nielson Norman Group</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div
+            class="col-md-6 my-3 mx-4 rounded-5 border ms-auto"
+            style="background-color: ghostwhite"
+          >
+            <h2 class="text-start ms-4 mt-4" id="howIWork">How I work</h2>
+            <p class="text-start ms-4 mt-4 me-5 pe-4 fs-6">
+              I have had a little bit of experience developing websites before.
+              I want to further hone my skills as a Software Engineer and
+              develop a professional website (such as this portfolio!) by taking
+              a UI design course at the University of Ottawa. <br />
+              <br />
+              To achieve my goals I will apply following design principles:
+              <br />
+            </p>
+            <p class="text-start ms-4 mt-4 fs-6">
+              <b> Scale, Visual Hierarchy, Balance, Contrast </b>
+            </p>
+            <p class="text-start ms-4 mt-4 fs-6">
+              I also hope to learn the Gestalt Laws later this term.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <div
-      class="container mt-5 border rounded-4 pb-4"
-      style="background-color: honeydew"
-    >
-      <h1 class="text-center display-6 mb-4" id="caseStudies">Case Studies</h1>
-      <div class="row">
-        <div class="col-md-3">
-          <a
-            href="Service.html"
-            title="Service Site"
-            data-bs-toggle="popover"
-            data-bs-placement="top"
-            data-bs-custom-class="image-popover"
-            data-bs-trigger="hover"
-            data-bs-content="Coming Soon!"
-            ><img
-              src="images/Service_Site.jpg"
-              class="rounded-4 w-100 border"
-              alt="Service_Site"
-          /></a>
-        </div>
-        <div class="col-md-3">
-          <a
-            href="Game.html"
-            title="Game"
-            data-bs-toggle="popover"
-            data-bs-placement="top"
-            data-bs-custom-class="image-popover"
-            data-bs-trigger="hover"
-            data-bs-content="Coming Soon!"
-            ><img
-              src="images/Game.jpg"
-              class="rounded-4 w-100 border"
-              alt="Game"
-          /></a>
-        </div>
-        <div class="col-md-3">
-          <a
-            href="E_Commerce.html"
-            title="E-Commerce Site"
-            data-bs-toggle="popover"
-            data-bs-placement="top"
-            data-bs-custom-class="image-popover"
-            data-bs-trigger="hover"
-            data-bs-content="Coming Soon!"
-            ><img
-              src="images/E_Commerce.jpg"
-              class="rounded-4 w-100 border"
-              alt="E_Commerce"
-          /></a>
-        </div>
-        <div class="col-md-3">
-          <a
-            href="Analytics.html"
-            title="Analytics Site"
-            data-bs-toggle="popover"
-            data-bs-placement="top"
-            data-bs-custom-class="image-popover"
-            data-bs-trigger="hover"
-            data-bs-content="Coming Soon!"
-            ><img
-              src="images/Analytics.jpg"
-              class="rounded-4 w-100 border"
-              alt="Analytics"
-          /></a>
+      <div
+        class="container mt-5 border rounded-4 pb-4"
+        style="background-color: honeydew"
+      >
+        <h1 class="text-center display-6 mb-4" id="caseStudies">
+          Case Studies
+        </h1>
+        <div class="row">
+          <div class="col-md-3">
+            <a
+              href="Service.html"
+              title="Service Site"
+              data-bs-toggle="popover"
+              data-bs-placement="top"
+              data-bs-custom-class="image-popover"
+              data-bs-trigger="hover"
+              data-bs-content="Coming Soon!"
+              ><img
+                src="images/Service_Site.jpg"
+                class="rounded-4 w-100 border"
+                alt="Service_Site"
+            /></a>
+          </div>
+          <div class="col-md-3">
+            <a
+              href="Game.html"
+              title="Game"
+              data-bs-toggle="popover"
+              data-bs-placement="top"
+              data-bs-custom-class="image-popover"
+              data-bs-trigger="hover"
+              data-bs-content="Coming Soon!"
+              ><img
+                src="images/Game.jpg"
+                class="rounded-4 w-100 border"
+                alt="Game"
+            /></a>
+          </div>
+          <div class="col-md-3">
+            <a
+              href="E_Commerce.html"
+              title="E-Commerce Site"
+              data-bs-toggle="popover"
+              data-bs-placement="top"
+              data-bs-custom-class="image-popover"
+              data-bs-trigger="hover"
+              data-bs-content="Coming Soon!"
+              ><img
+                src="images/E_Commerce.jpg"
+                class="rounded-4 w-100 border"
+                alt="E_Commerce"
+            /></a>
+          </div>
+          <div class="col-md-3">
+            <a
+              href="Analytics.html"
+              title="Analytics Site"
+              data-bs-toggle="popover"
+              data-bs-placement="top"
+              data-bs-custom-class="image-popover"
+              data-bs-trigger="hover"
+              data-bs-content="Coming Soon!"
+              ><img
+                src="images/Analytics.jpg"
+                class="rounded-4 w-100 border"
+                alt="Analytics"
+            /></a>
+          </div>
         </div>
       </div>
     </div>

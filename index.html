@@ -13,23 +13,32 @@
       body {
         padding-top: 120px;
       }
+      .image-popover {
+        --bs-popover-max-width: 200px;
+        --bs-popover-border-color: var(--bs-dark);
+        --bs-popover-header-bg: var(--bs-dark);
+        --bs-popover-header-color: var(--bs-light);
+        --bs-popover-body-bg: var(--bs-light);
+        --bs-popover-body-padding-x: 1rem;
+        --bs-popover-body-padding-y: 0.5rem;
+      }
     </style>
   </head>
-  <header>
-    <nav
-      class="navbar navbar-expand-sm bg-dark navbar-dark d-flex fixed-top align-items-center justify-content-between p-2 px-3"
-    >
-      <div class="bg-light rounded px-4">
-        <h4 class="text-center">Rayhan's Portfolio</h4>
-      </div>
-      <div class="btn-group">
-        <button type="button" class="btn btn-light">Home</button>
-        <button type="button" class="btn btn-light">Thing 1</button>
-        <button type="button" class="btn btn-light">Thing 2</button>
-      </div>
-    </nav>
-  </header>
   <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-sm bg-dark navbar-dark d-flex fixed-top align-items-center justify-content-between p-2 px-3"
+      >
+        <div class="bg-light rounded px-4">
+          <h4 class="text-center">Rayhan's Portfolio</h4>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-light">Home</button>
+          <button type="button" class="btn btn-light">Thing 1</button>
+          <button type="button" class="btn btn-light">Thing 2</button>
+        </div>
+      </nav>
+    </header>
     <div
       class="container p-2 my-2 border rounded-4 px-4"
       style="background-color: ghostwhite"
@@ -136,8 +145,77 @@
         </div>
       </div>
     </div>
+    <div
+      class="container mt-5 border rounded-4 pb-4"
+      style="background-color: honeydew"
+    >
+      <h1 class="text-center display-6 mb-4">Case Studies</h1>
+      <div class="row">
+        <div class="col-md-3">
+          <a
+            href="#"
+            title="Service Site"
+            data-bs-toggle="popover"
+            data-bs-placement="top"
+            data-bs-custom-class="image-popover"
+            data-bs-trigger="hover"
+            data-bs-content="Coming Soon!"
+            ><img
+              src="images/Service_Site.jpg"
+              class="rounded-4 w-100 border"
+              alt="Service_Site"
+          /></a>
+        </div>
+        <div class="col-md-3">
+          <a
+            href="#"
+            title="Game"
+            data-bs-toggle="popover"
+            data-bs-placement="top"
+            data-bs-custom-class="image-popover"
+            data-bs-trigger="hover"
+            data-bs-content="Coming Soon!"
+            ><img
+              src="images/Game.jpg"
+              class="rounded-4 w-100 border"
+              alt="Game"
+          /></a>
+        </div>
+        <div class="col-md-3">
+          <a
+            href="#"
+            title="E-Commerce Site"
+            data-bs-toggle="popover"
+            data-bs-placement="top"
+            data-bs-custom-class="image-popover"
+            data-bs-trigger="hover"
+            data-bs-content="Coming Soon!"
+            ><img
+              src="images/E_Commerce.jpg"
+              class="rounded-4 w-100 border"
+              alt="E_Commerce"
+          /></a>
+        </div>
+        <div class="col-md-3">
+          <a
+            href="#"
+            title="Analytics Site"
+            data-bs-toggle="popover"
+            data-bs-placement="top"
+            data-bs-custom-class="image-popover"
+            data-bs-trigger="hover"
+            data-bs-content="Coming Soon!"
+            ><img
+              src="images/Analytics.jpg"
+              class="rounded-4 w-100 border"
+              alt="Analytics"
+          /></a>
+        </div>
+      </div>
+    </div>
     <div class="mt-5 p-1 bg-dark text-white text-center">
       <p>Footer</p>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>

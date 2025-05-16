@@ -34,12 +34,16 @@
       .nav-link {
         color: #f8f9fa;
       }
-      .nav-link.active {
-        color: #212529 !important;
+      .nav-pills .nav-link.active {
+        background-color: #f8f9fa !important; /* Ensures the background is white */
+        color: #212529 !important; /* Adjusts text color for visibility */
+      }
+      a {
+        text-decoration: none;
       }
     </style>
   </head>
-  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="25">
     <header>
       <nav
         class="navbar navbar-expand-sm bg-dark navbar-dark d-flex fixed-top align-items-center justify-content-between p-2 px-3"
@@ -61,7 +65,7 @@
     </header>
     <div data-spy="scroll" data-target="#navbar" data-offset="0">
       <div
-        class="container p-2 my-2 border rounded-4 px-4"
+        class="container p-2 my-2 border rounded-4 px-4 shadow-lg"
         style="background-color: ghostwhite"
         id="aboutMe"
       >
@@ -82,23 +86,23 @@
           <div class="col-md-4">
             <img
               src="images/tree.jpg"
-              class="rounded-4 w-100 border"
+              class="rounded-4 w-100 border shadow"
               alt="Tree"
             />
           </div>
         </div>
       </div>
       <div
-        class="container mt-5 border rounded-4"
+        class="container mt-5 border rounded-4 shadow-lg"
         style="background-color: aliceblue"
       >
         <div class="row">
           <div
-            class="col-md-5 my-3 mx-4 rounded-5 border"
+            class="col-md-5 my-3 mx-4 rounded-5 border shadow"
             style="background-color: ghostwhite"
           >
             <h2 class="text-start ms-4 mt-4">Resources I'm Using</h2>
-            <div class="list-group ms-4 mt-4 me-4">
+            <div class="list-group ms-4 mt-4 me-4 shadow-sm">
               <a
                 href="https://www.w3schools.com/"
                 class="list-group-item list-group-item-action"
@@ -147,7 +151,7 @@
             </div>
           </div>
           <div
-            class="col-md-6 my-3 mx-4 rounded-5 border ms-auto"
+            class="col-md-6 my-3 mx-4 rounded-5 border ms-auto shadow"
             style="background-color: ghostwhite"
           >
             <h2 class="text-start ms-4 mt-4" id="howIWork">How I work</h2>
@@ -170,7 +174,7 @@
         </div>
       </div>
       <div
-        class="container mt-5 border rounded-4 pb-4"
+        class="container mt-5 border rounded-4 pb-2 shadow-lg"
         style="background-color: honeydew"
       >
         <h1 class="text-center display-6 mb-4" id="caseStudies">
@@ -188,9 +192,15 @@
               data-bs-content="Coming Soon!"
               ><img
                 src="images/Service_Site.jpg"
-                class="rounded-4 w-100 border"
+                class="rounded-4 w-100 border shadow"
                 alt="Service_Site"
-            /></a>
+              />
+              <p
+                class="text-center text-white bg-dark mx-5 mt-2 p-1 rounded-pill shadow"
+              >
+                Service Site
+              </p></a
+            >
           </div>
           <div class="col-md-3">
             <a
@@ -203,9 +213,15 @@
               data-bs-content="Coming Soon!"
               ><img
                 src="images/Game.jpg"
-                class="rounded-4 w-100 border"
+                class="rounded-4 w-100 border shadow"
                 alt="Game"
-            /></a>
+              />
+              <p
+                class="text-center text-white bg-dark mx-5 mt-2 p-1 rounded-pill shadow"
+              >
+                Game
+              </p></a
+            >
           </div>
           <div class="col-md-3">
             <a
@@ -218,9 +234,15 @@
               data-bs-content="Coming Soon!"
               ><img
                 src="images/E_Commerce.jpg"
-                class="rounded-4 w-100 border"
+                class="rounded-4 w-100 border shadow"
                 alt="E_Commerce"
-            /></a>
+              />
+              <p
+                class="text-center text-white bg-dark mx-5 mt-2 p-1 rounded-pill shadow"
+              >
+                E-Commerce Site
+              </p></a
+            >
           </div>
           <div class="col-md-3">
             <a
@@ -233,15 +255,24 @@
               data-bs-content="Coming Soon!"
               ><img
                 src="images/Analytics.jpg"
-                class="rounded-4 w-100 border"
+                class="rounded-4 w-100 border shadow"
                 alt="Analytics"
-            /></a>
+              />
+              <p
+                class="text-center text-white bg-dark mx-5 mt-2 p-1 rounded-pill shadow"
+              >
+                Analytics Site
+              </p></a
+            >
           </div>
         </div>
       </div>
     </div>
     <div class="mt-5 p-1 bg-dark text-white text-center">
-      <p>Footer</p>
+      <p>
+        Rayhan Karim &nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp; 300377828
+        &nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp; akari033@uottawa.ca
+      </p>
     </div>
     <script src="main.js"></script>
   </body>
